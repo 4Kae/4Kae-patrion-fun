@@ -52,9 +52,9 @@
     </div>
     
     <div id="hidden-page" class="hidden-page">
-        <h2>Surprise! 🎉</h2>
-        <p>Just kidding! There's no virus here, only good vibes and fun times!</p>
-        <p>Feel free to add whatever you want on this page.</p>
+        <h2>Jumping off a bridge tutorial!!</h2>
+        <p>couldn't find a trojan horse download link :(</p>
+        <p>monke</p>
     </div>
 
     <script>
@@ -62,5 +62,241 @@
             document.getElementById('hidden-page').classList.add('visible');
         }
     </script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .content {
+            margin-top: 50px;
+        }
+        .fun-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .fun-link:hover {
+            background-color: #e63946;
+        }
+        .hidden-page {
+            display: none;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+        .hidden-page.visible {
+            display: block;
+        }
+        .doors {
+            margin-top: 50px;
+        }
+        .door {
+            display: inline-block;
+            width: 80px;
+            height: 160px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border-radius: 5px;
+        }
+        .door:hover {
+            transform: scale(1.1);
+        }
+        #door1 { background-color: #ff6347; } /* Red Door */
+        #door2 { background-color: #87cefa; } /* Blue Door */
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Fun Zone!</h1>
+    <p>This is a place where I put all sorts of random fun stuff. Enjoy exploring!</p>
+    
+    <div class="content">
+        <a href="#" class="fun-link" onclick="showHiddenPage(); return false;">Trojan Horse Virus</a>
+    </div>
+    
+    <div id="hidden-page" class="hidden-page">
+        <h2>Jumping off a bridge tutorial!!</h2>
+        <p>couldn't find a trojan horse download link :(</p>
+        <p>monke</p>
+    </div>
+
+    <!-- Two Doors -->
+    <div class="doors">
+        <div id="door1" class="door" onclick="openPage('supercar-page')"></div>
+        <div id="door2" class="door" onclick="openPage('motivational-page')"></div>
+    </div>
+
+    <!-- Supercar Page -->
+    <div id="supercar-page" class="hidden-page">
+        <h2>Modern Minimalistic Supercar Page</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/some_supercar_video_id" title="Supercar Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <!-- Motivational Page -->
+    <div id="motivational-page" class="hidden-page">
+        <h2>Minimalistic Motivational Page</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/some_motivational_video_id?loop=1&playlist=some_motivational_video_id" title="Eye of the Tiger 4-hour loop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Get motivated with these videos!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/another_motivational_video_id" title="Motivational Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function showHiddenPage() {
+            document.getElementById('hidden-page').classList.add('visible');
+        }
+
+        function openPage(pageId) {
+            document.querySelectorAll('.hidden-page').forEach(page => {
+                page.classList.remove('visible');
+            });
+            document.getElementById(pageId).classList.add('visible');
+            document.querySelector('body').style.overflow = 'auto'; // Allow scrolling on new pages
+        }
+
+        function goBack() {
+            document.querySelectorAll('.hidden-page').forEach(page => {
+                page.classList.remove('visible');
+            });
+            document.querySelector('body').style.overflow = 'hidden'; // Prevent scrolling on the main page
+        }
+    </script>
+</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .content {
+            margin-top: 50px;
+        }
+        .fun-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .fun-link:hover {
+            background-color: #e63946;
+        }
+        .hidden-page {
+            display: none;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+        .hidden-page.visible {
+            display: block;
+        }
+        .doors {
+            margin-top: 50px;
+        }
+        .door {
+            display: inline-block;
+            width: 80px;
+            height: 160px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            border-radius: 5px;
+        }
+        .door:hover {
+            transform: scale(1.1);
+        }
+        #door1 { background-color: #ff6347; } /* Red Door */
+        #door2 { background-color: #87cefa; } /* Blue Door */
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Fun Zone!</h1>
+    <p>This is a place where I put all sorts of random fun stuff. Enjoy exploring!</p>
+    
+    <div class="content">
+        <a href="#" class="fun-link" onclick="showHiddenPage(); return false;">Trojan Horse Virus</a>
+    </div>
+    
+    <div id="hidden-page" class="hidden-page">
+        <h2>Jumping off a bridge tutorial!!</h2>
+        <p>couldn't find a trojan horse download link :(</p>
+        <p>monke</p>
+    </div>
+
+    <!-- Two Doors -->
+    <div class="doors">
+        <div id="door1" class="door" onclick="openPage('supercar-page')"></div>
+        <div id="door2" class="door" onclick="openPage('motivational-page')"></div>
+    </div>
+
+    <!-- Supercar Page -->
+    <div id="supercar-page" class="hidden-page">
+        <h2>Modern Minimalistic Supercar Page</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=59S4uXq7y6s" title="I woke up a new bugatti!!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <!-- Motivational Page -->
+    <div id="motivational-page" class="hidden-page">
+        <h2>Minimalistic Motivational Page</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Td_0Hq5sSSw" title="ultra motivation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Get motivated with these videos!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Td_0Hq5sSSw" title="antero taateli" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        function showHiddenPage() {
+            document.getElementById('hidden-page').classList.add('visible');
+        }
+
+        function openPage(pageId) {
+            document.querySelectorAll('.hidden-page').forEach(page => {
+                page.classList.remove('visible');
+            });
+            document.getElementById(pageId).classList.add('visible');
+            document.querySelector('body').style.overflow = 'auto'; // Allow scrolling on new pages
+        }
+
+        function goBack() {
+            document.querySelectorAll('.hidden-page').forEach(page => {
+                page.classList.remove('visible');
+            });
+            document.querySelector('body').style.overflow = 'hidden'; // Prevent scrolling on the main page
+        }
+    </script>
 </body>
 </html>
+

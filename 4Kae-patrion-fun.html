@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Zone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        .content {
+            margin-top: 50px;
+        }
+        .fun-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .fun-link:hover {
+            background-color: #e63946;
+        }
+        .hidden-page {
+            display: none;
+            margin-top: 50px;
+            font-size: 1.5em;
+        }
+        .hidden-page.visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Fun Zone!</h1>
+    <p>This is a place where I put all sorts of random fun stuff. Enjoy exploring!</p>
+    
+    <div class="content">
+        <a href="#" class="fun-link" onclick="showHiddenPage(); return false;">Trojan Horse Virus</a>
+    </div>
+    
+    <div id="hidden-page" class="hidden-page">
+        <h2>Surprise! 🎉</h2>
+        <p>Just kidding! There's no virus here, only good vibes and fun times!</p>
+        <p>Feel free to add whatever you want on this page.</p>
+    </div>
+
+    <script>
+        function showHiddenPage() {
+            document.getElementById('hidden-page').classList.add('visible');
+        }
+    </script>
+</body>
+</html>
